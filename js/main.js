@@ -44,6 +44,7 @@ function upload(){
     const description = document.querySelector("#description")
     const quantity = document.querySelector("#qty")
     const brand = document.querySelector("#brand")
+    const href = document.querySelector("#href")
     let wordToCheck = "ads/"
     let filepath = path.value
     if (filepath.includes(wordToCheck)) {
@@ -62,6 +63,7 @@ console.log(contents)
             'product_description': description.value,
             'quantity': quantity.value,
             'brand': brand.value,
+            'href': href.value,
         })
             .then(res => {
                 // console.log(res.getKey()) // this will return you ID
