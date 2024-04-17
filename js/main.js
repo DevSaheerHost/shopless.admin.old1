@@ -50,7 +50,7 @@ function upload(){
     let wordToCheck = "ads/"
     let filepath = path.value
     if (filepath.includes(wordToCheck)) {
-console.log(contents)
+//console.log(contents)
         
         postRef.set({
             'product_image': imgUrl.value,
