@@ -52,7 +52,7 @@ function upload(){
     if (filepath.includes(wordToCheck)) {
 //console.log(contents)
         
-        postRef.set({
+        postRef.push({
             'product_image': imgUrl.value,
         })
         alert("this is adds " + path.value)
